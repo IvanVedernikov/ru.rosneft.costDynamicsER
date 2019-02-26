@@ -1,0 +1,49 @@
+[{
+	"BEBER": "0001",
+	"BETXT": "Производство № 1",
+	"ORT01": "Екатеринбург",
+	"__metadata": {
+		"uri": "VL_BEBER('BEBER%201')",
+		"type": "ZPM_DEVELOPER_SCENARIO_SRV.VL_BEBER"
+	}
+}, {
+	"BEBER": "0002",
+	"BETXT": "Производство № 2",
+	"ORT01": "Пермь",
+	"__metadata": {
+		"uri": "VL_BEBER('BEBER%202')",
+		"type": "ZPM_DEVELOPER_SCENARIO_SRV.VL_BEBER"
+	}
+}, {
+	"BEBER": "0003",
+	"BETXT": "Производство № 3",
+	"ORT01": "Соликамск",
+	"__metadata": {
+		"uri": "VL_BEBER('BEBER%203')",
+		"type": "ZPM_DEVELOPER_SCENARIO_SRV.VL_BEBER"
+	}
+}, {
+	"BEBER": "0004",
+	"BETXT": "Производство № 4",
+	"ORT01": "Чусовой",
+	"__metadata": {
+		"uri": "VL_BEBER('BEBER%204')",
+		"type": "ZPM_DEVELOPER_SCENARIO_SRV.VL_BEBER"
+	}
+}, {
+	"BEBER": "0005",
+	"BETXT": "Производство № 5",
+	"ORT01": "Кизел",
+	"__metadata": {
+		"uri": "VL_BEBER('BEBER%205')",
+		"type": "ZPM_DEVELOPER_SCENARIO_SRV.VL_BEBER"
+	}
+}, {
+	"BEBER": "0006",
+	"BETXT": "Производство № 6",
+	"ORT01": "Нижний новгород",
+	"__metadata": {
+		"uri": "VL_BEBER('BEBER%206')",
+		"type": "ZPM_DEVELOPER_SCENARIO_SRV.VL_BEBER"
+	}
+}]
