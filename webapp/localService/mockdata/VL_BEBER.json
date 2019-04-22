@@ -1,49 +1,97 @@
 [{
-	"BEBER": "0001",
-	"BETXT": "Производство № 1",
-	"ORT01": "Екатеринбург",
-	"__metadata": {
-		"uri": "VL_BEBER('BEBER%201')",
-		"type": "ZPM_DEVELOPER_SCENARIO_SRV.VL_BEBER"
-	}
+	"Bukrs": "1781",
+	"Betxt": "Цех №01",
+	"Beber": "Ц01"
 }, {
-	"BEBER": "0002",
-	"BETXT": "Производство № 2",
-	"ORT01": "Пермь",
-	"__metadata": {
-		"uri": "VL_BEBER('BEBER%202')",
-		"type": "ZPM_DEVELOPER_SCENARIO_SRV.VL_BEBER"
-	}
+	"Bukrs": "1781",
+	"Betxt": "Цех №02",
+	"Beber": "Ц02"
 }, {
-	"BEBER": "0003",
-	"BETXT": "Производство № 3",
-	"ORT01": "Соликамск",
-	"__metadata": {
-		"uri": "VL_BEBER('BEBER%203')",
-		"type": "ZPM_DEVELOPER_SCENARIO_SRV.VL_BEBER"
-	}
+	"Bukrs": "1781",
+	"Betxt": "Цех №03",
+	"Beber": "Ц03"
 }, {
-	"BEBER": "0004",
-	"BETXT": "Производство № 4",
-	"ORT01": "Чусовой",
-	"__metadata": {
-		"uri": "VL_BEBER('BEBER%204')",
-		"type": "ZPM_DEVELOPER_SCENARIO_SRV.VL_BEBER"
-	}
+	"Bukrs": "1781",
+	"Betxt": "Цех №10",
+	"Beber": "Ц10"
 }, {
-	"BEBER": "0005",
-	"BETXT": "Производство № 5",
-	"ORT01": "Кизел",
-	"__metadata": {
-		"uri": "VL_BEBER('BEBER%205')",
-		"type": "ZPM_DEVELOPER_SCENARIO_SRV.VL_BEBER"
-	}
+	"Bukrs": "1781",
+	"Betxt": "Цех №11",
+	"Beber": "Ц11"
 }, {
-	"BEBER": "0006",
-	"BETXT": "Производство № 6",
-	"ORT01": "Нижний новгород",
-	"__metadata": {
-		"uri": "VL_BEBER('BEBER%206')",
-		"type": "ZPM_DEVELOPER_SCENARIO_SRV.VL_BEBER"
-	}
+	"Bukrs": "1781",
+	"Betxt": "Цех №12",
+	"Beber": "Ц12"
+}, {
+	"Bukrs": "1781",
+	"Betxt": "Цех №13",
+	"Beber": "Ц13"
+}, {
+	"Bukrs": "1781",
+	"Betxt": "Цех №14",
+	"Beber": "Ц14"
+}, {
+	"Bukrs": "1781",
+	"Betxt": "Цех №15",
+	"Beber": "Ц15"
+}, {
+	"Bukrs": "1781",
+	"Betxt": "Цех №16",
+	"Beber": "Ц16"
+}, {
+	"Bukrs": "1781",
+	"Betxt": "Цех №17",
+	"Beber": "Ц17"
+}, {
+	"Bukrs": "1781",
+	"Betxt": "Цех №18",
+	"Beber": "Ц18"
+}, {
+	"Bukrs": "1781",
+	"Betxt": "Цех №20",
+	"Beber": "Ц20"
+}, {
+	"Bukrs": "1781",
+	"Betxt": "Цех №22",
+	"Beber": "Ц22"
+}, {
+	"Bukrs": "1781",
+	"Betxt": "Цех №23",
+	"Beber": "Ц23"
+}, {
+	"Bukrs": "1781",
+	"Betxt": "Цех №27",
+	"Beber": "Ц27"
+}, {
+	"Bukrs": "1805",
+	"Beber": "Ц12",
+	"Betxt": "Цех №12"
+}, {
+	"Bukrs": "1805",
+	"Beber": "Ц13",
+	"Betxt": "Цех №13"
+}, {
+	"Bukrs": "1805",
+	"Beber": "Ц14",
+	"Betxt": "Цех №14"
+}, {
+	"Bukrs": "1805",
+	"Beber": "ЦБО",
+	"Betxt": "ЦБО"
+}, {
+	"Bukrs": "1805",
+	"Beber": "П01",
+	"Betxt": "Производство№1"
+}, {
+	"Bukrs": "1805",
+	"Beber": "П02",
+	"Betxt": "Производство№2"
+}, {
+	"Bukrs": "1805",
+	"Beber": "П03",
+	"Betxt": "Производство№3"
+}, {
+	"Bukrs": "1805",
+	"Beber": "П04",
+	"Betxt": "Производство№4"
 }]

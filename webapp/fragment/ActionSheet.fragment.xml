@@ -1,0 +1,6 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ActionSheet title="Выбрать" showCancelButton="true" placement="Bottom">
+		<Button text="Абсолютные" press="onSelectMeasureAbsolute"/>
+		<Button text="Удельные" press="onSelectMeasureEDC"/>
+	</ActionSheet>
+</core:FragmentDefinition>

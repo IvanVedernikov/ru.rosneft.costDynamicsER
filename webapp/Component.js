@@ -23,7 +23,7 @@ sap.ui.define([
 			MockServer.init();
 
 			var oModel = new sap.ui.model.odata.v2.ODataModel({
-				serviceUrl: "/destinations/service"
+				serviceUrl: "/destinations/service5"
 			});
 			this.setModel(oModel);
 

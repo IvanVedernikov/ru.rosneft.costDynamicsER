@@ -14,7 +14,7 @@ sap.ui.define([
 	return Controller.extend("ru.rosneft.costDynamicsER.controller.SmartChart", {
 
 		onInit: function () {
-
+			this._aMeasures = ["CostMaterial", "CostServices"];
 		},
 
 		onNavigationTargetsObtained: function (oEvent) {
@@ -29,68 +29,9 @@ sap.ui.define([
 				maxContainerCols: 1,
 				content: [
 					new sap.ui.core.Title({
-						text: "Список заказов" + ' (' + oSemanticAttributes.Count + ')'
-					}), new sap.m.Table({
-						id: "mainViewTbl",
-						items: {
-							path: '/OrdersSet',
-							filters: new Filter([new Filter("Bebtxt", FilterOperator.EQ, oSemanticAttributes.Bebtxt),
-								new Filter("Bebtxt", FilterOperator.EQ, oSemanticAttributes.Bebtxt)
-							], false),
-							template: new sap.m.ColumnListItem({
-								cells: [
-									new sap.m.Text({
-										text: "{Nun}"
-									}),
-									new sap.m.Text({
-										text: "{Butxt}"
-									}),
-									new sap.m.Text({
-										text: "{Bebtxt}"
-									}),
-									new sap.m.Text({
-										text: "{Year}"
-									}),
-									new sap.m.Text({
-										text: "{Count}"
-									})
-								]
-							})
-						},
-						columns: [
-							new sap.m.Column({
-								header: [
-									new sap.m.Label({
-										text: "{i18n>NumOrder}"
-									})
-								]
-							}), new sap.m.Column({
-								header: [
-									new sap.m.Label({
-										text: "{i18n>plant}"
-									})
-								]
-							}), new sap.m.Column({
-								header: [
-									new sap.m.Label({
-										text: "{i18n>Bebtxt}"
-									})
-								]
-							}), new sap.m.Column({
-								header: [
-									new sap.m.Label({
-										text: "{i18n>year}"
-									})
-								]
-							}), new sap.m.Column({
-								header: [
-									new sap.m.Label({
-										text: "{i18n>DescOrder}"
-									})
-								]
-							})
-						]
-					})
+						text: oSemanticAttributes.Year
+					}), sap.ui.xmlfragment("ru.rosneft.costDynamicsER.fragment.TableCost")
+
 				]
 			}));
 		},
@@ -108,23 +49,55 @@ sap.ui.define([
 				]
 			});
 		},
+
+		handlePopoveronChangeMeasures: function (oEvent) {
+			var oButton = oEvent.getSource();
+
+			// create action sheet only once
+			if (!this._actionSheet) {
+				this._actionSheet = sap.ui.xmlfragment(
+					"ru.rosneft.costDynamicsER.fragment.ActionSheet",
+					this
+				);
+				this.getView().addDependent(this._actionSheet);
+			}
+
+			this._actionSheet.openBy(oButton);
+		},
+
+		onSelectMeasureAbsolute: function (oEvent) {
+			var oSmartChart = this.getView().byId("smartChartGeneral");
+			var oVizChart = oSmartChart.getChart();
+			oVizChart.setVisibleMeasures(["CostMaterial", "CostServices"]);
+		},
+
+		onSelectMeasureEDC: function (oEvent) {
+			var oSmartChart = this.getView().byId("smartChartGeneral");
+			var oVizChart = oSmartChart.getChart();
+			oVizChart.setVisibleMeasures(["CostMaterial_EDC", "CostServices_EDC"]);
+		},
+
 		onVizSetings: function () {
 			//set maxHeight for categoryAxis in order to allow longer labels being fully displayed
 			var oSmartChart = this.getView().byId("smartChartGeneral");
 			var oVizChart = oSmartChart.getChart();
+			oVizChart.setVisibleMeasures(this._aMeasures);
 			oVizChart.setVizProperties({
 				categoryAxis: {
 					layout: {
 						maxHeight: 0.8
+					},
+					title: {
+						visible: false
 					}
 				},
 				plotArea: {
 					dataLabel: {
-						visible: true
+						visible: true,
+						showTotal: true
 					}
 				}
 			});
-			// oVizChart.setChartType("dual_stacked_column");
 		}
 	});
 });
